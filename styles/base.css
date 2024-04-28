@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Robot', monospace;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+}
+
+/* HEADER */
+header {
+    background: #245574;
+    grid-row: span 1;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 20px 0;
+}
+
+nav {
+    grid-column: 1 / 5;
+    background-color: grey;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    color: black;
+}
+
+/* END HEADER */
+
+/* MAIN */
+main {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+.left-card {
+    grid-column: span 1;
+    margin: 1rem;
+    border: 2px solid grey;
+    border-radius: 25px;
+}
+
+.right-card {
+    grid-column: span 1;
+    margin: 1rem;
+    border: 2px solid grey;
+    border-radius: 25px;
+}
+
+.card-header {
+    text-align: center;
+    background-color: #245574;
+    border-radius: 20px 20px 0 0;
+    font-size: 2rem;
+    color: white;
+    padding: 20px 0;
+}
+
+.resource-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 70%;
+    align-content: space-evenly;
+    margin: 3rem;
+    font-size: 1.5rem;
+}
+
+.resource-links a {
+    padding: 10px;
+    text-decoration: none;
+}
+
+.profile {
+    display: flex;
+    margin: 2rem;
+}
+
+.profile-description {
+    font-size: 1.5rem;
+    padding-left: 30px;
+    text-justify: auto;
+}
+
+.profile-image {
+    width: auto;
+    height: auto;
+    border: #245574 1px solid;
+    border-radius: 5%;
+    max-width: 200px;
+}
+
+.placement {
+    margin: 2rem;
+}
+
+.placement hr {
+    padding: 0px 1rem;
+}
+
+.placement h2 {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.country-information {
+    display: flex;
+    padding-top: 20px;
+}
+
+.country-image {
+    border: gray;
+    width: auto;
+    max-height: 200px;
+    padding-right: 20px;
+}
+
+.country-image-legend {
+    font-size: 1rem;
+    padding-top: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+.country-description {
+    font-size: 1.3rem;
+}
+
+/* END MAIN */
+
+
+/* FOOTER */
+
+footer {
+    grid-row: 4 / 5;
+    text-align: center;
+    background: #245574;
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+/* END FOOTER */
