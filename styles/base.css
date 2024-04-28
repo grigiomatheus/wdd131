@@ -14,7 +14,6 @@ body {
     grid-template-columns: 1fr;
 }
 
-/* HEADER */
 header {
     background: #245574;
     grid-row: span 1;
@@ -54,9 +53,6 @@ nav a:hover {
     color: black;
 }
 
-/* END HEADER */
-
-/* MAIN */
 main {
     display: grid;
     grid-template-rows: 1fr;
@@ -156,11 +152,6 @@ main {
     font-size: 1.3rem;
 }
 
-/* END MAIN */
-
-
-/* FOOTER */
-
 footer {
     grid-row: 4 / 5;
     text-align: center;
@@ -169,5 +160,3 @@ footer {
     padding: 1rem;
     font-size: 1.5rem;
 }
-
-/* END FOOTER */
