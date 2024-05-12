@@ -1,0 +1,143 @@
+:root {
+    --font-color: #B7CE63;
+    --background-color: #4B5842;
+    --header-and-footer-padding: 1.5rem;
+    --font-size-title: 6vw;
+    --font-size: 1.5vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', monospace;
+    width: 100%;
+}
+
+main {
+    background-color: var(--background-color);
+    position: relative;
+}
+
+header {
+    display: block;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: var(--header-and-footer-padding);
+    background-color: var(--background-color);
+}
+
+#title {
+    color: var(--font-color);
+    font-size: var(--font-size-title);
+}
+
+footer {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    background: var(--background-color);
+    color: var(--font-color);
+    font-size: calc(var(--font-size-title) * 0.5);
+    padding: var(--header-and-footer-padding);
+}
+
+.info-description p::first-line {
+    font-weight: bold;
+}
+
+.info-description {
+    padding-right: 10px;
+}
+
+.info-description p {
+    text-align: right;
+}
+
+.card {
+    display: block;
+    position: absolute;
+    padding: 1rem;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.card-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1rem;
+}
+
+.card h2 {
+    font-size: calc(var(--font-size-title) * 0.5);
+}
+
+.card-info {
+    font-size: var(--font-size);
+}
+
+.card-info p{
+    padding-bottom: 0.5vh;
+}
+
+@media screen and (min-width: 800px) {    
+    .data {
+        left: 3vw;
+        top: 5vh;
+    }
+    
+    .weather {
+        right: 3vw;
+        bottom: 5vh;
+    }
+    
+    .card h2 {
+        display: block;
+        position: relative;
+        background-color: #C7D59F;
+        width: 100%;
+        padding: 1rem;
+        right: 2rem;
+    }
+    
+    #weather-image {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: "⛅";
+        padding-left: 4rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    :root {
+        --font-size-title: 10vw;
+        --font-size: 3vw;
+        padding: 0;
+        margin: 0;
+    }
+
+    .card {
+        display: block;
+        position: relative;
+        background-color:#C7D59F;
+        font-size: 3vw;
+    }
+
+    .card h2 {
+        display: block;
+        background-color: transparent;
+        text-align: center;
+        width: 100%;
+    }
+
+   #weather-image {
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: max(15vh, 100px);
+        padding: 1rem;
+    }
+}

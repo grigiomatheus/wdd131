@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matheus Grigio da Silva">
+    <meta name="description" content="Place Activity">
+    <title>WDD 131 - Place Activity - Matheus Grigio da Silva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Brazil</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/onca-pintada-small.webp" media="(max-width: 600px)">
+            <img src="images/onca-pintada.webp" alt="Brazil" width="100%" height="auto">
+        </picture>
+        <div class="data card">
+            <h2>Data</h2>
+            <div class="card-info">
+                <div class="info-description">
+                    <p>Area: </p>
+                    <p>Population: </p>
+                    <p>Capital: </p>
+                    <p>Currency: </p>
+                    <p>Time Zone: </p>
+                    <p>Calling Code: </p>
+                    <p>Internet TLG: </p>
+                </div>
+                <div class="info-values">
+                    <p>8.51 million km²</p>
+                    <p>215.3 million</p>
+                    <p>Brasilia</p>
+                    <p>Real</p>
+                    <p>GMT -3</p>
+                    <p>+55</p>
+                    <p>.br</p>
+                </div>
+            </div>
+        </div>
+        <div class="weather card">
+            <h2>Weather</h2>
+            <img id="weather-image" src="/images/weather-clouds.svg" alt="clouds"></img>
+            <div class="card-info">
+                <div class="info-description">
+                    <p>Temperature: </p>
+                    <p>Conditions: </p>
+                    <p>Wind: </p>
+                    <p>Wind Chill: </p>
+                </div>
+                <div class="info-values">
+                    <p>25º C</p>
+                    <p>Partly Cloudy</p>
+                    <p>5km/h</p>
+                    <span id="windchill"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"> - Matheus Grigio da Silva - Brazil</span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
