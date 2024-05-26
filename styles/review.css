@@ -1,0 +1,30 @@
+#content {
+    padding: 2rem 0;
+}
+
+h2 {
+    font-size: max(2.5vw, 30px);
+}
+
+p {
+    font-size: max(2vw, 20px);
+    padding: 0.5rem 0;
+}
+
+body {
+    background-color: #A8BA9A;
+}
+
+main {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1.5rem;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}

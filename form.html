@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 05 - Form Activity - Matheus Grigio da Silva</title>
+    <meta name="author" content="Matheus Grigio da Silva">
+    <meta name="description" content="Product Review Activity">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <div id="content">
+            <form action="review.html" method="get">
+                <div class="product-name">
+                    <label for="products">Product Name:</label>
+                    <select name="product-name" id="products" required>
+                        <option value="">Choose a Product ...</option>
+                    </select>
+                </div>
+    
+                <div>Overall Rating:</div>
+                <div class="overall-rating">
+                    <label class="radio"><input id="rating-1" type="radio" name="rating" value="1" required>&star;</label>
+                    <label class="radio"><input id="rating-2" type="radio" name="rating" value="2">&star;&star;</label>
+                    <label class="radio"><input id="rating-3" type="radio" name="rating" value="3">&star;&star;&star;</label>
+                    <label class="radio"><input id="rating-4" type="radio" name="rating"
+                            value="4">&star;&star;&star;&star;</label>
+                    <label class="radio"><input id="rating-5" type="radio" name="rating"
+                            value="5">&star;&star;&star;&star;&star;</label>
+                </div>
+    
+                <label>Date of Installation <input id="date-installation" type="date" name="date-installation"
+                        required></label>
+                <div> Which feature did you find useful in the product?<p>(Check all that apply)</p>
+                </div>
+                <label><input id="useful-features-durability" type="checkbox" name="useful-features"
+                        value="durability">Durability</label>
+                <label><input id="useful-features-ease-of-use" type="checkbox" name="useful-features" value="ease-of-use">Ease of
+                    Use</label>
+                <label><input id="useful-features-performance" type="checkbox" name="useful-features"
+                        value="performance">Performance</label>
+                <label><input id="useful-features-design" type="checkbox" name="useful-features" value="design">Design</label>
+    
+                <label>Written Review <span class="optional">(Optional)</span> <textarea id="written-review"
+                        name="written-review"></textarea></label>
+    
+                <label>Your Name <span class="optional">(Optional)</span><input id="user-name" type="text"></label>
+    
+                <input id="submit-button" type="submit" value="Post Review">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"> - Matheus Grigio da Silva - Paraná - Brazil</span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
