@@ -1,0 +1,101 @@
+:root {
+    --sneaker-title-font-size: 2.5vw;
+    --sneaker-price-font-size: 2.5vw;
+    --button-font-size: 1.5rem;
+}
+
+#sneakers-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+    background-color: var(--tertiary-color);
+}
+
+.sneaker-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0.5rem;
+    border: 2px solid var(--quaternary-color);
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+.sneaker-card img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    height: auto;
+    max-height: auto;
+    margin: 0 auto;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+.sneaker-card h2 {
+    font-size: var(--sneaker-title-font-size);
+    color: var(--primary-color);
+    font-family: var(--title-font);
+    text-align: center;
+}
+
+.sneaker-card p {
+    display: block;
+    font-family: var(--title-font);
+    font-size: var(--sneaker-price-font-size);
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+.sneaker-card button {
+    font-family: var(--title-font);
+    font-weight: bolder;
+    font-size: var(--button-font-size);
+    color: var(--tertiary-color);
+    background-color: var(--quaternary-color);
+    border: none;
+    padding: 0.5rem 0;
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 50%;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.sneaker-card button:hover {
+    background-color: var(--quinary-color);
+    color: var(--quaternary-color);
+}
+
+@media screen and (max-width: 800px) {
+    :root {
+        --sneaker-title-font-size: 5vw;
+        --sneaker-price-font-size: 4vw;
+        --button-font-size: 1rem;
+    }
+
+    #sneakers-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sneaker-card img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    :root {
+        --sneaker-title-font-size: 7vw;
+        --sneaker-price-font-size: 6.5vw;
+        --button-font-size: 1rem;
+    }
+
+    #sneakers-container {
+        grid-template-columns: 1fr;
+    }
+}

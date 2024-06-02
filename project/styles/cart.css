@@ -1,0 +1,143 @@
+:root {
+    --sneaker-title-font-size: 2.5vw;
+    --sneaker-price-font-size: 2vw;
+    --button-font-size: 1rem;
+}
+
+#cart-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--tertiary-color);
+}
+
+#cart-content h1 {
+    font-family: var(--title-font);
+    font-size: min(4vw, 3rem);
+    color: var(--primary-color);
+}
+
+#sneaker-list {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.sneaker-card {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 0.5rem;
+    padding: 0.7rem 0;
+    border: 2px solid var(--quaternary-color);
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+.sneaker-card img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    height: auto;
+    max-height: auto;
+    margin: 0 auto;
+}
+
+.sneaker-card h2 {
+    font-size: var(--sneaker-title-font-size);
+    color: var(--primary-color);
+    font-family: var(--title-font);
+    text-align: center;
+}
+
+.sneaker-card p {
+    display: block;
+    font-family: var(--title-font);
+    font-size: var(--sneaker-price-font-size);
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+.sneaker-card button {
+    font-family: var(--title-font);
+    font-weight: bolder;
+    font-size: var(--button-font-size);
+    color: var(--tertiary-color);
+    background-color: var(--quaternary-color);
+    border: none;
+    padding: 0.5rem 0;
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 50%;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.sneaker-card button:hover {
+    background-color: var(--quinary-color);
+}
+
+#buy-info {
+    text-align: center;
+    position: sticky;
+    top: 1rem;
+    padding: 1rem;
+    background-color: var(--tertiary-color);
+    align-self: start;
+}
+
+#total-price {
+    margin: 1rem 0;
+    font-size: min(3vw, 2rem);
+}
+
+#checkout {
+    padding: 0.75rem 1.5rem;
+    color: var(--tertiary-color);
+    background-color: var(--quaternary-color);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: var(--title-font);
+}
+
+#checkout:hover {
+    color: var(--quaternary-color);
+    background-color: var(--quinary-color);
+}
+
+@media screen and (max-width: 800px) {
+    :root {
+        --sneaker-title-font-size: 5vw;
+        --sneaker-price-font-size: 4vw;
+        --button-font-size: 1rem;
+    }
+
+    #cart-content {
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .sneaker-card {
+        width: 100%;
+    }
+
+    #cart-content h1 {
+        font-size: 6vw;
+    }
+
+    #total-price {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    :root {
+        --sneaker-title-font-size: 5vw;
+        --sneaker-price-font-size: 4.5vw;
+        --button-font-size: 0.5rem;
+    }
+}
